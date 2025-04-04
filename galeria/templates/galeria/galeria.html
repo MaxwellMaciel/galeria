@@ -1,6 +1,6 @@
 {% extends 'galeria/base.html' %}
 
-{% block title %}Galeria - Doja Cat{% endblock %}
+{% block title %}Galeria de fotos{% endblock %}
 
 {% block extra_css %}
     {% load static %}
@@ -8,14 +8,31 @@
 {% endblock %}
 
 {% block content %}
+    <div class="menu-container">
+        <div class="menu">
+            Menu
+        </div>
+        <div class="menu-items">
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'sobre' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Albuns</a>
+            <a href="{% url 'ouvir' %}" class="menu-item">Ouvir</a>
+        </div>
+    </div>
+
     <div class="container">
-        <h1>Galeria de Fotos</h1>
-        <div class="gallery-grid">
-            {% for i in "123456789"|make_list %}
-                <div class="gallery-item">
-                    <img src="{% static 'galeria/imgs/Doja_galeria ('|add:i|add:').png' %}" alt="Doja Cat {{ i }}">
-                </div>
-            {% endfor %}
+        <h1>Galeria</h1>
+
+        <div class="header">
+            <div class="gallery">
+                {% for i in "123456789"|make_list %}
+                    <div class="gallery-item">
+                        <a href="{% static 'galeria/imgs/Doja_galeria ('|add:i|add:').png' %}" download>
+                            <img src="{% static 'galeria/imgs/Doja_galeria ('|add:i|add:').png' %}" alt="Doja Cat {{ i }}" class="gallery-image"/>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %} 

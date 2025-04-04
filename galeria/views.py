@@ -16,3 +16,15 @@ def galeria(request):
 
 def ouvir(request):
     return render(request, 'galeria/stream.html')
+
+def amala(request):
+    return render(request, 'galeria/amala.html')
+
+def hotpink(request):
+    return render(request, 'galeria/hotpink.html')
+
+def planether(request):
+    return render(request, 'galeria/planether.html')
+
+def scarlet(request):
+    return render(request, 'galeria/scarlet.html')

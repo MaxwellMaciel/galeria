@@ -1,28 +1,46 @@
 {% extends 'galeria/base.html' %}
 
-{% block title %}Ouvir - Doja Cat{% endblock %}
+{% block title %}Stream - Meu Site{% endblock %}
 
 {% block extra_css %}
     {% load static %}
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'galeria/css/stream.css' %}">
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <h1>Ouvir Doja Cat</h1>
-        <div class="stream-links">
-            <div class="stream-platform">
-                <img src="{% static 'galeria/imgs/spotifyqrcode.png' %}" alt="Spotify QR Code">
+    <div class="menu-container">
+        <div class="menu">
+            Menu
+        </div>
+        <div class="menu-items">
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'sobre' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Albuns</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+        </div>
+    </div>
+
+    <div class="stream-container">
+        <div class="blur-box">
+            <a href="https://open.spotify.com/intl-pt/artist/5cj0lLjcoR7YOSnhnX0Po5" class="stream-box spotify">
                 <h2>Spotify</h2>
-            </div>
-            <div class="stream-platform">
-                <img src="{% static 'galeria/imgs/youtubeqrcode.png' %}" alt="YouTube QR Code">
-                <h2>YouTube</h2>
-            </div>
-            <div class="stream-platform">
-                <img src="{% static 'galeria/imgs/appleqrcode.png' %}" alt="Apple Music QR Code">
+                <img src="{% static 'galeria/imgs/spotifyqrcode.png' %}" alt="QR Code Spotify">
+            </a>
+        </div>
+
+        <div class="blur-box">
+            <a href="https://music.apple.com/us/artist/doja-cat/830588310" class="stream-box apple-music">
                 <h2>Apple Music</h2>
-            </div>
+                <img src="{% static 'galeria/imgs/appleqrcode.png' %}" alt="QR Code Apple Music">
+            </a>
+        </div>
+
+        <div class="blur-box">
+            <a href="https://www.youtube.com/channel/UCzpl23pGTHVYqvKsgY0A-_w" class="stream-box youtube">
+                <h2>YouTube</h2>
+                <img src="{% static 'galeria/imgs/youtubeqrcode.png' %}" alt="QR Code YouTube">
+            </a>
         </div>
     </div>
 {% endblock %} 
