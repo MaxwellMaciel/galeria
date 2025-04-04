@@ -1,0 +1,22 @@
+{% extends 'galeria/base.html' %}
+
+{% block title %}Sobre - Doja Cat{% endblock %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'galeria/css/artista.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Sobre Doja Cat</h1>
+        <div class="content">
+            <img src="{% static 'galeria/imgs/DOJA.png' %}" alt="Doja Cat" class="profile-img">
+            <div class="text-content">
+                <p>Doja Cat, nome artístico de Amala Ratna Zandile Dlamini, é uma cantora, rapper e compositora americana nascida em 21 de outubro de 1995 em Los Angeles, Califórnia.</p>
+                <p>Ela ganhou destaque com seu single "Mooo!" em 2018 e desde então tem se consolidado como uma das artistas mais inovadoras da música pop atual.</p>
+                <p>Seus álbuns incluem "Amala" (2018), "Hot Pink" (2019), "Planet Her" (2021) e "Scarlet" (2023).</p>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

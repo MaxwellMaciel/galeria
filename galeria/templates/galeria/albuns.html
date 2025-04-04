@@ -1,0 +1,32 @@
+{% extends 'galeria/base.html' %}
+
+{% block title %}Álbuns - Doja Cat{% endblock %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'galeria/css/album.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Álbuns</h1>
+        <div class="albums-grid">
+            <div class="album">
+                <img src="{% static 'galeria/imgs/amala.png' %}" alt="Amala">
+                <h2>Amala (2018)</h2>
+            </div>
+            <div class="album">
+                <img src="{% static 'galeria/imgs/hotpink.png' %}" alt="Hot Pink">
+                <h2>Hot Pink (2019)</h2>
+            </div>
+            <div class="album">
+                <img src="{% static 'galeria/imgs/planether.png' %}" alt="Planet Her">
+                <h2>Planet Her (2021)</h2>
+            </div>
+            <div class="album">
+                <img src="{% static 'galeria/imgs/scarlet.png' %}" alt="Scarlet">
+                <h2>Scarlet (2023)</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

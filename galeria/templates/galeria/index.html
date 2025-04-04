@@ -1,0 +1,31 @@
+{% extends 'galeria/base.html' %}
+
+{% block title %}Doja Cat Center{% endblock %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'galeria/css/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="text-container">
+        <span class="doja-text">DOJA</span>
+        <span class="cat-text">CAT</span>
+    </div>
+    <img src="{% static 'galeria/imgs/DOJAcapa.png' %}" class="doja-capa" alt="Foto da artista Doja Cat">
+
+    <div class="dots-container">
+        <a href="{% url 'sobre' %}" class="dot">
+            <span class="dot-text">Sobre</span>
+        </a>
+        <a href="{% url 'albuns' %}" class="dot">
+            <span class="dot-text">Álbuns</span>
+        </a>
+        <a href="{% url 'galeria' %}" class="dot">
+            <span class="dot-text">Galeria</span>
+        </a>
+        <a href="{% url 'ouvir' %}" class="dot">
+            <span class="dot-text">Ouvir</span>
+        </a>
+    </div>
+{% endblock %} 

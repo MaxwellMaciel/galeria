@@ -1,0 +1,21 @@
+{% extends 'galeria/base.html' %}
+
+{% block title %}Galeria - Doja Cat{% endblock %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'galeria/css/galeria.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Galeria de Fotos</h1>
+        <div class="gallery-grid">
+            {% for i in "123456789"|make_list %}
+                <div class="gallery-item">
+                    <img src="{% static 'galeria/imgs/Doja_galeria ('|add:i|add:').png' %}" alt="Doja Cat {{ i }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %} 

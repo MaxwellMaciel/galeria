@@ -1,0 +1,18 @@
+from django.shortcuts import render
+
+# Create your views here.
+
+def index(request):
+    return render(request, 'galeria/index.html')
+
+def sobre(request):
+    return render(request, 'galeria/artista.html')
+
+def albuns(request):
+    return render(request, 'galeria/albuns.html')
+
+def galeria(request):
+    return render(request, 'galeria/galeria.html')
+
+def ouvir(request):
+    return render(request, 'galeria/stream.html')

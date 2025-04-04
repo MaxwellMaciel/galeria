@@ -1,0 +1,28 @@
+{% extends 'galeria/base.html' %}
+
+{% block title %}Ouvir - Doja Cat{% endblock %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'galeria/css/stream.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Ouvir Doja Cat</h1>
+        <div class="stream-links">
+            <div class="stream-platform">
+                <img src="{% static 'galeria/imgs/spotifyqrcode.png' %}" alt="Spotify QR Code">
+                <h2>Spotify</h2>
+            </div>
+            <div class="stream-platform">
+                <img src="{% static 'galeria/imgs/youtubeqrcode.png' %}" alt="YouTube QR Code">
+                <h2>YouTube</h2>
+            </div>
+            <div class="stream-platform">
+                <img src="{% static 'galeria/imgs/appleqrcode.png' %}" alt="Apple Music QR Code">
+                <h2>Apple Music</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %} 
