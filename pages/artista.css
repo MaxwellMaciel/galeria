@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    background-image: url('../imgs/DOJA.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(10, 10, 10, 0.8); 
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); 
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+}
+
+.highlight {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.header-image {
+    display: block;
+    margin: 0 auto 40px;
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: top center; 
+    border-radius: 10px;
+}
+
+
+.menu-container {
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+.menu {
+    background-color: rgba(141, 21, 21, 0.6);
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+}
+
+.menu-items {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.menu-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-container:hover .menu-items {
+    display: block;
+}
+
+img.section-image {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
