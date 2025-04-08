@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Álbuns - Doja Cat</title>
+    <link rel="stylesheet" href="{% static 'galeria/css/album.css' %}">
+</head>
+
+<body>
+    <div class="albums-container">
+        <div class="album-box">
+            <a href="{% url 'amala' %}" class="album-link">
+                <img src="{% static 'galeria/img/amala.png' %}" alt="Amala">
+                <div class="album-name">AMALA</div>
+            </a>
+        </div>
+
+        <div class="album-box">
+            <a href="{% url 'hotpink' %}" class="album-link">
+                <img src="{% static 'galeria/img/hotpink.png' %}" alt="Hot Pink">
+                <div class="album-name">HOT PINK</div>
+            </a>
+        </div>
+
+        <div class="album-box">
+            <a href="{% url 'planether' %}" class="album-link">
+                <img src="{% static 'galeria/img/planether.png' %}" alt="Planet Her">
+                <div class="album-name">PLANET HER</div>
+            </a>
+        </div>
+
+        <div class="album-box">
+            <a href="{% url 'scarlet' %}" class="album-link">
+                <img src="{% static 'galeria/img/scarlet.png' %}" alt="Scarlet">
+                <div class="album-name">SCARLET</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu">
+            Menu
+        </div>
+        <div class="menu-items">
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'artista' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+            <a href="{% url 'stream' %}" class="menu-item">Ouvir</a>
+        </div>
+    </div>
+</body>
+
+</html>
+

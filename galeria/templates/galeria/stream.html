@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Stream - Meu Site</title>
+    {% load static %}
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stream.css">
+    <link rel="stylesheet" href="{% static 'galeria/css/stream.css' %}">
 </head>
 
 <body>
@@ -24,21 +25,21 @@
         <div class="blur-box">
             <a href="https://open.spotify.com/intl-pt/artist/5cj0lLjcoR7YOSnhnX0Po5" class="stream-box spotify">
                 <h2>Spotify</h2>
-                <img src="../imgs/spotifyqrcode.png" alt="QR Code Spotify">
+                <img src="{% static 'galeria/img/spotifyqrcode.png' %}" alt="QR Code Spotify">
             </a>
         </div>
 
         <div class="blur-box">
             <a href="https://music.apple.com/us/artist/doja-cat/830588310" class="stream-box apple-music">
                 <h2>Apple Music</h2>
-                <img src="../imgs/appleqrcode.png" alt="QR Code Apple Music">
+                <img src="{% static 'galeria/img/appleqrcode.png' %}" alt="QR Code Apple Music">
             </a>
         </div>
 
         <div class="blur-box">
             <a href="https://www.youtube.com/channel/UCzpl23pGTHVYqvKsgY0A-_w" class="stream-box youtube">
                 <h2>YouTube</h2>
-                <img src="../imgs/youtubeqrcode.png" alt="QR Code YouTube">
+                <img src="{% static 'galeria/img/youtubeqrcode.png' %}" alt="QR Code YouTube">
             </a>
         </div>
     </div>

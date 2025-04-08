@@ -16,7 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from galeria import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('galeria/', views.galeria, name='galeria'),
+    path('artista/', views.artista, name='artista'),
+    path('albuns/', views.albuns, name='albuns'),
+    path('amala/', views.amala, name='amala'),
+    path('hotpink/', views.hotpink, name='hotpink'),
+    path('planether/', views.planether, name='planether'),
+    path('scarlet/', views.scarlet, name='scarlet'),
+    path('stream/', views.stream, name='stream'),
 ]

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <title>Álbum Amala - Doja Cat</title>
-    <link rel="stylesheet" href="amala.css">
+    <link rel="stylesheet" href="{% static 'galeria/css/amala.css' %}">
 </head>
 
 <body class="amala">
@@ -12,17 +13,17 @@
             Menu
         </div>
         <div class="menu-items">
-            <a href="../index.html" class="menu-item">Ínicio</a>
-            <a href="artista.html" class="menu-item">Sobre</a>
-            <a href="albuns.html" class="menu-item">Albuns</a>
-            <a href="galeria.html" class="menu-item">Galeria</a>
-            <a href="stream.html" class="menu-item">Ouvir</a>
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'artista' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Albuns</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+            <a href="{% url 'stream' %}" class="menu-item">Ouvir</a>
         </div>
     </div>
 
     <div class="container">
         <h1>Álbum: Amala - Doja Cat</h1>
-        <img src="../imgs/amala.png" alt="Capa do Álbum" class="header-image">
+        <img src="{% static 'galeria/img/amala.png' %}" alt="Capa do Álbum" class="header-image">
 
         <div class="header">
             <p><span class="highlight">Amala</span> é o álbum de estreia da rapper americana Doja Cat, lançado em 30 de março de 2018 pela Kemosabe Records e RCA Records. A versão deluxe do álbum foi lançada em 1º de março de 2019, incluindo os singles de destaque "Juicy", "Tia Tamera" e "Mooo!". Esse foi o primeiro lançamento comercial de Doja Cat em quatro anos, mas a artista expressou desagrado por vários motivos em relação ao álbum.</p>

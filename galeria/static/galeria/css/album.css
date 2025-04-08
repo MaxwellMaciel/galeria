@@ -1,55 +1,60 @@
 body {
-    background-image: url('../imgs/DOJA.png');
+    font-family: 'Arial', sans-serif;
+    background-image: url('../img/DOJA.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
+    padding-bottom: 100px; /* Espaço para o menu */
 }
 
-.stream-container {
+.albums-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 0 20px;
 }
 
-.blur-box {
+.album-box {
     position: relative;
-    width: 350px;
-    height: 400px;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+    flex: 0 0 auto;
 }
 
-.stream-box {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
+.album-box:hover {
+    transform: scale(1.05);
+}
+
+.album-link {
     display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
 }
 
-.stream-box img {
-    width: 200px;
-    margin-top: 10px;
-}
-
-.stream-box h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
+.album-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .menu-container {
@@ -58,6 +63,7 @@ body {
     left: 40px;
     text-align: center;
     width: 100px;
+    z-index: 1000; /* Garante que o menu fique sempre por cima */
 }
 
 .menu {

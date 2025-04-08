@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <title>Doja Cat Center</title>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pages/style.css">
+    <link rel="stylesheet" href="{% static 'galeria/css/style.css' %}">
 </head>
 
 <body>
@@ -12,22 +13,22 @@
         <span class="doja-text">DOJA</span>
         <span class="cat-text">CAT</span>
     </div>
-    <img src="imgs/DOJAcapa.png" class="doja-capa" alt="Foto da artista Doja Cat">
+    <img src="{% static 'galeria/img/DOJAcapa.png' %}" class="doja-capa" alt="Foto da artista Doja Cat">
 
     <div class="dots-container">
-        <a href="pages/artista.html" class="dot">
+        <a href="{% url 'artista' %}" class="dot">
             <span class="dot-text">Sobre</span>
         </a>
-        <a href="pages/albuns.html" class="dot">
+        <a href="{% url 'albuns' %}" class="dot">
             <span class="dot-text">Álbuns</span>
         </a>
-        <a href="pages/galeria.html" class="dot">
+        <a href="{% url 'galeria' %}" class="dot">
             <span class="dot-text">Galeria</span>
         </a>
-        <a href="pages/stream.html" class="dot">
+        <a href="{% url 'stream' %}" class="dot">
             <span class="dot-text">Ouvir</span>
         </a>
     </div>    
 </body>
 
-</html>
+</html> 

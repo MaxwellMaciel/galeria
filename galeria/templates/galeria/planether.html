@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
-    <title>Álbum Hot Pink - Doja Cat</title>
-    <link rel="stylesheet" href="planether.css">
+    <title>Álbum Planet Her - Doja Cat</title>
+    <link rel="stylesheet" href="{% static 'galeria/css/planether.css' %}">
 </head>
 
 <body class="planether">
@@ -12,17 +13,17 @@
             Menu
         </div>
         <div class="menu-items">
-            <a href="../index.html" class="menu-item">Ínicio</a>
-            <a href="artista.html" class="menu-item">Sobre</a>
-            <a href="albuns.html" class="menu-item">Albuns</a>
-            <a href="galeria.html" class="menu-item">Galeria</a>
-            <a href="stream.html" class="menu-item">Ouvir</a>
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'artista' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Albuns</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+            <a href="{% url 'stream' %}" class="menu-item">Ouvir</a>
         </div>
     </div>
     
     <div class="container">
         <h1>Álbum: <b>Planet Her</b> - Doja Cat</h1>
-        <img src="../imgs/planether.png" alt="Capa do Álbum" class="header-image">
+        <img src="{% static 'galeria/img/planether.png' %}" alt="Capa do Álbum" class="header-image">
     
         <div class="header">
             <p><span class="highlight"><b>Planet Her</b></span> é o terceiro álbum de estúdio da rapper e cantora americana Doja Cat, lançado em 25 de junho de 2021 pela Kemosabe Records e RCA Records. O álbum mistura uma diversidade de estilos musicais, incluindo pop, R&B, hip hop, funk e soul, com faixas que variam entre momentos sedutores e introspectivos, e grandes sucessos como "Kiss Me More", "Need to Know" e "Woman". <b>Planet Her</b> recebeu elogios da crítica e consolidou ainda mais a versatilidade de Doja Cat como uma artista inovadora.</p>

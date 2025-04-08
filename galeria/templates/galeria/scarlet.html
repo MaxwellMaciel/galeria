@@ -1,41 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Álbum Scarlet - Doja Cat</title>
-    <link rel="stylesheet" href="scarlet.css">
+    <link rel="stylesheet" href="{% static 'galeria/css/scarlet.css' %}">
 </head>
-
 <body class="scarlet">
     <div class="menu-container">
         <div class="menu">
             Menu
         </div>
         <div class="menu-items">
-            <a href="../index.html" class="menu-item">Ínicio</a>
-            <a href="artista.html" class="menu-item">Sobre</a>
-            <a href="albuns.html" class="menu-item">Albuns</a>
-            <a href="galeria.html" class="menu-item">Galeria</a>
-            <a href="stream.html" class="menu-item">Ouvir</a>
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'artista' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Albuns</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+            <a href="{% url 'stream' %}" class="menu-item">Ouvir</a>
         </div>
     </div>
-    
+
     <div class="container">
         <h1>Álbum: <b>Scarlet</b> - Doja Cat</h1>
-        <img src="../imgs/scarlet.png" alt="Capa do Álbum" class="header-image">
-    
+        <img src="{% static 'galeria/img/scarlet.png' %}" alt="Capa do Álbum" class="header-image">
+        
         <div class="header">
             <p><span class="highlight"><b>Scarlet</b></span> é o quarto álbum de estúdio da rapper e cantora americana Doja Cat, lançado em 22 de setembro de 2023 pela Kemosabe Records e RCA Records. O álbum marca uma mudança significativa no estilo de Doja Cat, com uma sonoridade mais voltada para o rap, incorporando influências do hip hop dos anos 90 e da música experimental. Faixas como "Paint the Town Red", "Attention" e "Agora Hills" demonstram sua nova abordagem musical, desafiando as expectativas dos fãs e da crítica. <b>Scarlet</b> foi amplamente elogiado por sua audácia e por mostrar uma faceta mais madura e intensa da artista.</p>
             <p>O álbum teve grande sucesso comercial, estreando no número 4 da Billboard 200 e alcançando a segunda posição nas paradas de R&B/Hip-Hop Albums. <b>Scarlet</b> também obteve sucesso globalmente, com "Paint the Town Red" alcançando o topo das paradas em vários países, incluindo os EUA, o Reino Unido e o Canadá. O álbum se tornou um marco na carreira de Doja Cat, consolidando sua habilidade de transitar entre diferentes gêneros musicais e reafirmando sua posição como uma das artistas mais inovadoras da música contemporânea.</p>
         </div>
-    
+
         <div class="header">
             <h2>Contexto e Lançamento</h2>
             <p>O lançamento de <b>Scarlet</b> seguiu o sucesso de <b>Planet Her</b> e trouxe uma mudança estilística significativa para Doja Cat. Lançado em 22 de setembro de 2023, o álbum foi promovido por singles como "Paint the Town Red" e "Attention", que se tornaram hits instantâneos, conquistando grande popularidade nas plataformas de streaming e nas rádios. O álbum foi produzido durante um período de intenso trabalho em Malibu, Califórnia, e marca a transição de Doja Cat para um som mais agressivo e focado no rap, algo que ela vinha buscando há algum tempo.</p>
             <p>Além disso, o álbum trouxe uma abordagem mais sombria e agressiva, com letras desafiadoras e temas de empoderamento, egocentrismo e crítica social. <b>Scarlet</b> é uma fusão de rap, trap e elementos experimentais, refletindo a jornada de Doja Cat em encontrar sua própria identidade artística. As colaborações com artistas como The Weeknd e SZA ajudaram a expandir o alcance do álbum, que também foi lançado em uma versão deluxe com faixas adicionais.</p>
             <p class="quote">"Scarlet é a minha forma de quebrar as regras e mostrar que posso ser mais do que se espera de mim. Cada música é uma expressão de mim mesma, das minhas lutas e vitórias." – Doja Cat</p>
         </div>
-    
+
         <div class="header">
             <h2>Singles</h2>
             <p>"Paint the Town Red", o principal single do álbum, foi lançado em 4 de agosto de 2023 e rapidamente se tornou um sucesso mundial, alcançando o topo das paradas em vários países. A faixa se destacou pela ousadia de Doja Cat em confrontar seus críticos de maneira implacável, marcando um retorno à sua abordagem mais agressiva.</p>
@@ -43,7 +44,7 @@
             <p>"Attention", lançada em 16 de junho de 2023, também teve grande impacto, alcançando o Top 40 em vários países e gerando um grande movimento nas redes sociais. A faixa explorou o desejo de Doja Cat por atenção e a busca por aceitação em um mundo cada vez mais focado na imagem.</p>
             <p>"Demons", que foi um dos singles promocionais, também gerou grande repercussão devido à sua temática sombria e ao estilo horrorcore da música, mostrando um lado mais sombrio da artista.</p>
         </div>
-    
+
         <div class="header">
             <h2>Avaliação Crítica</h2>
             <p>O álbum <b>Scarlet</b> foi amplamente elogiado pela crítica por sua ousadia e pela forma como Doja Cat se afastou do pop para se concentrar no rap e na experimentação sonora. A NPR destacou o álbum como um dos melhores de 2023, elogiando a habilidade da artista em criar músicas impactantes e complexas que desafiam as convenções do gênero. <b>Scarlet</b> também foi aclamado por suas colaborações únicas e pela maneira como Doja Cat abordou temas como poder, fama e identidade de forma visceral e honesta.</p>
@@ -199,6 +200,6 @@
                 </tbody>
             </table>
         </div>
-    </div>      
+    </div>
 </body>
 </html>

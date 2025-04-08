@@ -1,6 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('../imgs/DOJA.png');
+    background-image: url('../img/DOJA.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -9,50 +8,48 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.stream-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
-.albums-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%; 
-}
-
-.album-box {
+.blur-box {
     position: relative;
-    width: 250px; 
-    height: 250px; 
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s;
-    margin: 10px; 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.album-box:hover {
-    transform: scale(1.05);
-}
-
-.album-link {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
+.stream-box {
     color: white;
+    font-size: 24px;
     text-decoration: none;
+    display: block;
 }
 
-.album-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.stream-box img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.stream-box h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
 }
 
 .menu-container {

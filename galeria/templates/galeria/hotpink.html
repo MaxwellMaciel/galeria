@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <title>Álbum Hot Pink - Doja Cat</title>
-    <link rel="stylesheet" href="hotpink.css">
+    <link rel="stylesheet" href="{% static 'galeria/css/hotpink.css' %}">
 </head>
 
 <body class="hotpink">
@@ -12,17 +13,17 @@
             Menu
         </div>
         <div class="menu-items">
-            <a href="../index.html" class="menu-item">Ínicio</a>
-            <a href="artista.html" class="menu-item">Sobre</a>
-            <a href="albuns.html" class="menu-item">Albuns</a>
-            <a href="galeria.html" class="menu-item">Galeria</a>
-            <a href="stream.html" class="menu-item">Ouvir</a>
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'artista' %}" class="menu-item">Sobre</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Albuns</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+            <a href="{% url 'stream' %}" class="menu-item">Ouvir</a>
         </div>
     </div>
     
     <div class="container">
         <h1>Álbum: <bold>Hot Pink</bold> - Doja Cat</h1>
-        <img src="../imgs/hotpink.png" alt="Capa do Álbum" class="header-image">
+        <img src="{% static 'galeria/img/hotpink.png' %}" alt="Capa do Álbum" class="header-image">
 
         <div class="header">
             <p><span class="highlight"><bold>Hot Pink</bold></span> é o segundo álbum de estúdio da rapper americana Doja Cat, lançado em 7 de novembro de 2019 pela Kemosabe Records e RCA Records. O álbum traz uma fusão de diversos gêneros musicais, incluindo pop, hip hop, R&B, funk e soul, e inclui os singles de sucesso "Say So", "Like That" e "Juicy". O álbum foi amplamente aclamado pela crítica e ajudou Doja Cat a se consolidar como uma das artistas mais versáteis da indústria musical.</p>
