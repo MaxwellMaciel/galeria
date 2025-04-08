@@ -1,0 +1,81 @@
+body {
+    background-image: url('../imgs/DOJA.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.doja-text,
+.cat-text {
+    font-family: 'Acme', sans-serif;
+    font-size: 300px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.doja-text {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+.cat-text {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+.doja-capa {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: auto;
+    height: 750px;
+    margin-left: -669px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -15%;
+}
+
+.dot {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.dot-text {
+    font-family: "Arial", sans-serif;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -20px; 
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}

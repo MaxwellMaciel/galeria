@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../imgs/DOJA.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%; 
+}
+
+.album-box {
+    position: relative;
+    width: 250px; 
+    height: 250px; 
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+    margin: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.album-box:hover {
+    transform: scale(1.05);
+}
+
+.album-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.album-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-container {
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+.menu {
+    background-color: rgba(141, 21, 21, 0.6);
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+}
+
+.menu-items {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.menu-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-container:hover .menu-items {
+    display: block;
+}
