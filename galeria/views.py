@@ -28,3 +28,6 @@ def scarlet(request):
 
 def stream(request):
     return render(request, 'galeria/stream.html')
+
+def criadores(request):
+    return render(request, 'galeria/criadores.html')

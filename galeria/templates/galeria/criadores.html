@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Criadores</title>
+    <link rel="stylesheet" href="{% static 'galeria/css/artista.css' %}">
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            Menu
+        </div>
+        <div class="menu-items">
+            <a href="{% url 'index' %}" class="menu-item">Ínicio</a>
+            <a href="{% url 'albuns' %}" class="menu-item">Álbuns</a>
+            <a href="{% url 'galeria' %}" class="menu-item">Galeria</a>
+            <a href="{% url 'stream' %}" class="menu-item">Ouvir</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Criadores</h1>
+
+        <div class="header">
+            <h2>Maxwell Maciel de Sousa</h2>
+            <div class="section">
+                <p>Nascido em 19 de outubro de 2007, Maxwell morou em Itapebussu e recentemente se mudou para Maranguape. Atualmente vive com seu pai e entre seus esportes favoritos está o vôlei.</p>
+            </div>
+        </div>
+
+        <div class="header">
+            <h2>Taís Colares</h2>
+            <div class="section">
+                <p>Nascida em dezembro de 2005, Taís morou em São João do Amanari e há 3 meses se mudou para Maranguape, onde mora com sua irmã mais nova. Entre seus hobbies estão cozinhar e passar tempo com amigos e família.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> 

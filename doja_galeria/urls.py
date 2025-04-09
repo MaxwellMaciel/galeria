@@ -29,4 +29,5 @@ urlpatterns = [
     path('planether/', views.planether, name='planether'),
     path('scarlet/', views.scarlet, name='scarlet'),
     path('stream/', views.stream, name='stream'),
+    path('criadores/', views.criadores, name='criadores'),
 ]
